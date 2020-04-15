@@ -4,32 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ФСПО 2.0</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://fspo.ifmo.ru/bundles/app/img/favicon.ico"/>
+    <link rel="apple-touch-icon" href="https://fspo.ifmo.ru/bundles/app/img/apple_touch.png"/>
+    <link rel="image_src" href="https://fspo.ifmo.ru/bundles/app/img/opera_speeddial.png"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
     <style>
+        @font-face {
+            font-family: "JetBrains Mono";
+            src: url(/static/JetBrainsMono.ttf);
+        }
+
         html {
             font-family: "Open Sans", sans-serif !important;
+            /* background-color: #404040; */
         }
 
         .is-link {
             background-color: #163ea4 !important;
         }
-    </style>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-            if ($navbarBurgers.length > 0) {
-                $navbarBurgers.forEach(el => {
-                    el.addEventListener('click', () => {
-                        const target = el.dataset.target;
-                        const $target = document.getElementById(target);
-                        el.classList.toggle('is-active');
-                        $target.classList.toggle('is-active');
-                    });
-                });
-            }
 
-        });
-    </script>
+        .box {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .blue {
+            background-color: #163ea4;
+            color: #fff;
+        }
+
+        .box h2 {
+            color: #fff;
+        }
+
+        .mono {
+            font-family: "JetBrains Mono", monospace;
+        }
+
+    </style>
+    <script src="/static/navbar.js"></script>
 </head>
 <body>
 <nav class="navbar is-link" role="navigation" aria-label="main navigation">
@@ -67,5 +80,30 @@
         </div>
     </div>
 </nav>
+<div class="section content" style="max-width: 960px; margin: 0 auto">
+    <div id="1" class="box blue">
+        <h2>ФСПО <span class="mono">2</span>.<span class="mono">0</span> - новый подход к среднему профессиональному
+            образованию</h2>
+        Обучение в ФСПО позволит выбрать особое направление, наиболее интересующее студента.<br>
+        <b>Изучай что хочешь <i>ты</i></b>
+    </div>
+
+    <h2>Учебная программа</h2>
+    От транизисторов до Python
+
+    <div style="margin-top: 1em; display: flex; flex-direction: column">
+        <div class="box" style="text-align: center; background-color: #e3f1fa; display: flex; flex-direction: column">
+            <img src="/img/transistor.svg" alt="Транзистор" style="margin: 0 auto">
+            Изучение работы транзистора<br>
+            <b class="mono">ФИЗИКА</b>
+        </div>
+        <img src="/img/arrow.svg" style="margin-bottom: 24px" alt="стрелочка">
+        <div class="box" style="text-align: center; background-color: #effaf3; display: flex; flex-direction: column">
+            <img src="/img/circuit.svg" alt="Схема" style="margin: 0 auto">
+            Изучение работы процессора и памяти<br>
+            <b class="mono">ИНФОРМАТИКА</b>
+        </div>
+    </div>
+</div>
 </body>
 </html>
