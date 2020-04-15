@@ -11,7 +11,7 @@
     <style>
         @font-face {
             font-family: "JetBrains Mono";
-            src: url(/static/JetBrainsMono.ttf);
+            src: url(static/JetBrainsMono.ttf);
         }
 
         html {
@@ -28,9 +28,33 @@
             margin: 0 auto;
         }
 
+        .blue,
+        .red {
+            color: #fff;
+        }
+
         .blue {
             background-color: #163ea4;
-            color: #fff;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .blue-light {
+            background-color: #e3f1fa
+        }
+
+        .green-light {
+            background-color: #effaf3;
+        }
+
+        .red-light {
+            background-color: #fde0e6;
+        }
+
+        .yellow-light {
+            background-color: #fff8de;
         }
 
         .box h2 {
@@ -41,14 +65,30 @@
             font-family: "JetBrains Mono", monospace;
         }
 
+        .fl-column {
+            text-align: center;
+            display: flex;
+            flex-direction: column
+        }
+
+        .fl-column img {
+            margin: 0 auto;
+        }
+
+        #asm {
+            text-align: left;
+        }
+
     </style>
     <script src="/static/navbar.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar is-link" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <a class="navbar-item" href="https://bulma.io">
-            <img src="/img/fspo-logo.png" width="112" height="28"
+            <img src="img/fspo-logo.png" width="112" height="28"
                  alt="Логотип ФСПО">
         </a>
 
@@ -81,7 +121,10 @@
     </div>
 </nav>
 <div class="section content" style="max-width: 960px; margin: 0 auto">
-    <div id="1" class="box blue">
+    <div class="box red">
+        <h2>Набор <span class="mono">2020</span> открыт!</h2>
+    </div>
+    <div class="box blue">
         <h2>ФСПО <span class="mono">2</span>.<span class="mono">0</span> - новый подход к среднему профессиональному
             образованию</h2>
         Обучение в ФСПО позволит выбрать особое направление, наиболее интересующее студента.<br>
@@ -92,18 +135,57 @@
     От транизисторов до Python
 
     <div style="margin-top: 1em; display: flex; flex-direction: column">
-        <div class="box" style="text-align: center; background-color: #e3f1fa; display: flex; flex-direction: column">
-            <img src="/img/transistor.svg" alt="Транзистор" style="margin: 0 auto">
+        <div class="box fl-column blue-light" data-aos="fade-in">
+            <img src="img/transistor.svg" alt="Транзистор">
             Изучение работы транзистора<br>
             <b class="mono">ФИЗИКА</b>
         </div>
-        <img src="/img/arrow.svg" style="margin-bottom: 24px" alt="стрелочка">
-        <div class="box" style="text-align: center; background-color: #effaf3; display: flex; flex-direction: column">
-            <img src="/img/circuit.svg" alt="Схема" style="margin: 0 auto">
+        <img src="img/arrow.svg" style="margin-bottom: 24px" alt="стрелочка">
+        <div class="box fl-column green-light" data-aos="fade-in">
+            <img src="img/sprite1.svg" alt="Схема" id="circuit">
             Изучение работы процессора и памяти<br>
             <b class="mono">ИНФОРМАТИКА</b>
         </div>
+        <img src="img/arrow.svg" style="margin-bottom: 24px" alt="стрелочка">
+        <div class="box fl-column red-light" data-aos="fade-in">
+            <div class="mono" id="asm">┌────────┬────────┐<br>|AX: FFFF|BX: FFFF|<br>└────────┴────────┘<br><br><br><br></div>
+            Изучение Assembler
+            <b class="mono">АРХИТЕКТУРА<br>ПРОЦЕССОРА</b>
+        </div>
     </div>
 </div>
+<script>
+    AOS.init();
+</script>
+<script type="text/javascript">
+    const image = document.getElementById("circuit");
+    let images = ["img/sprite1.svg", "img/sprite2.svg", "img/sprite3.svg"], i = 0;
+
+    function changeFrame() {
+        if (++i >= images.length)
+            i = 0;
+
+        image.src = images[i];
+    }
+
+    setInterval(changeFrame, 1000);
+</script>
+<script type="text/javascript">
+    const asm_image = document.getElementById("asm");
+    let asm_images = ["┌────────┬────────┐<br>|AX: FFFF|BX: FFFF|<br>└────────┴────────┘<br><br><br><br>",
+            "┌────────┬────────┐<br>|AX: 0005|BX: FFFF|<br>└────────┴────────┘<br>mov ax, 5<br><br><br>",
+            "┌────────┬────────┐<br>|AX: 0005|BX: 0007|<br>└────────┴────────┘<br>mov ax, 5<br>mov bx, 7<br><br>",
+            "┌────────┬────────┐<br>|AX: 000C|BX: 0007|<br>└────────┴────────┘<br>mov ax, 5<br>mov bx, 7<br>mov ax, bx"],
+        y = 0;
+
+    function asm_changeFrame() {
+        if (++y >= asm_images.length)
+            y = 0;
+
+        asm_image.innerHTML = asm_images[y];
+    }
+
+    setInterval(asm_changeFrame, 1000);
+</script>
 </body>
 </html>
