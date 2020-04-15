@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Создано Microsoft Visio, экспорт SVG transistor.svg Страница-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		width="1.20539in" height="1.36868in" viewBox="0 0 86.7881 98.5453" xml:space="preserve" color-interpolation-filters="sRGB"
+		class="st6">
+	<style type="text/css">
+	<![CDATA[
+		.st1 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
+		.st2 {marker-end:url(#mrkr13-30);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
+		.st3 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.37313432835821}
+		.st4 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st5 {fill:#000000;font-family:JetBrains Mono;font-size:1.00001em}
+		.st6 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Markers">
+		<g id="lend13">
+			<path d="M 3 1 L 0 0 L 3 -1 L 3 1 " style="stroke:none"/>
+		</g>
+		<marker id="mrkr13-30" class="st3" refX="-8.04" orient="auto" markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend13" transform="scale(-2.68,-2.68) "/>
+		</marker>
+	</defs>
+	<g>
+		<title>Страница-1</title>
+		<g id="shape6-1" transform="translate(141.44,44.312) rotate(90)">
+			<title>Лист.6</title>
+			<path d="M0 98.55 L7.09 98.55" class="st1"/>
+		</g>
+		<g id="shape7-4" transform="translate(141.44,51.3986) rotate(90)">
+			<title>Лист.7</title>
+			<path d="M0 98.55 L7.09 98.55" class="st1"/>
+		</g>
+		<g id="shape8-7" transform="translate(141.44,58.4852) rotate(90)">
+			<title>Лист.8</title>
+			<path d="M0 98.55 L7.09 98.55" class="st1"/>
+		</g>
+		<g id="shape9-10" transform="translate(141.44,37.2254) rotate(90)">
+			<title>Лист.9</title>
+			<path d="M0 98.55 L7.09 98.55" class="st1"/>
+		</g>
+		<g id="shape10-13" transform="translate(-1.17611,-43.8296) rotate(-26.5651)">
+			<title>Лист.10</title>
+			<path d="M0 98.55 L34.86 98.55" class="st1"/>
+		</g>
+		<g id="shape13-16" transform="translate(111.139,102.848) rotate(153.435)">
+			<title>Лист.13</title>
+			<path d="M-0 82.88 A28.3465 28.3465 -32.43 0 0 50.71 82.88" class="st1"/>
+		</g>
+		<g id="shape14-19" transform="translate(65.7846,-22.7277) rotate(26.5651)">
+			<title>Лист.14</title>
+			<path d="M0 82.88 A28.3465 28.3465 -45 0 0 50.71 82.88" class="st1"/>
+		</g>
+		<g id="shape15-22" transform="translate(-13.1309,74.0758) rotate(-90)">
+			<title>Лист.15</title>
+			<path d="M0 87.21 A28.3465 28.3465 -45 0 0 45.35 87.21" class="st1"/>
+		</g>
+		<g id="shape16-25" transform="translate(86.9655,-29.6563) rotate(26.5651)">
+			<title>Лист.16</title>
+			<path d="M0 98.55 L22.8 98.55" class="st2"/>
+		</g>
+		<g id="shape19-31" transform="translate(28.7215,-47.1467)">
+			<title>Лист.19</title>
+			<path d="M0 98.55 L14.17 98.55" class="st1"/>
+		</g>
+		<g id="shape20-34" transform="translate(14.5482,-47.1467)">
+			<title>Лист.20</title>
+			<path d="M0 98.55 L14.17 98.55" class="st1"/>
+		</g>
+		<g id="shape21-37" transform="translate(172.621,14.5482) rotate(90)">
+			<title>Лист.21</title>
+			<path d="M0 98.55 L14.17 98.55" class="st1"/>
+		</g>
+		<g id="shape22-40" transform="translate(172.621,74.0758) rotate(90)">
+			<title>Лист.22</title>
+			<path d="M0 98.55 L14.17 98.55" class="st1"/>
+		</g>
+		<g id="shape23-43" transform="translate(59.9026,-75.4931)">
+			<title>Лист.23</title>
+			<desc>К</desc>
+			<rect x="0" y="75.8681" width="14.1732" height="22.6772" class="st4"/>
+			<text x="4" y="90.81" class="st5">К</text>		</g>
+		<g id="shape24-46" transform="translate(0.375,-35.8081)">
+			<title>Лист.24</title>
+			<desc>Б</desc>
+			<rect x="0" y="75.8681" width="14.1732" height="22.6772" class="st4"/>
+			<text x="4" y="90.81" class="st5">Б</text>		</g>
+		<g id="shape25-49" transform="translate(59.9026,-0.375)">
+			<title>Лист.25</title>
+			<desc>Э</desc>
+			<rect x="0" y="75.8681" width="14.1732" height="22.6772" class="st4"/>
+			<text x="4" y="90.81" class="st5">Э</text>		</g>
+	</g>
+</svg>
