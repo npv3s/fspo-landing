@@ -1,9 +1,11 @@
 service: fspo-landing
 runtime: python37
 
-env_variables:
-  BUCKET_NAME: "fspo-landing"
-
 handlers:
 - url: /img
   static_dir: img
+
+- url: /.*
+  #secure: always
+  redirect_http_response_code: 301
+  script: auto
