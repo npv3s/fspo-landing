@@ -1,0 +1,9 @@
+service: fspo-landing
+runtime: python37
+
+env_variables:
+  BUCKET_NAME: "fspo-landing"
+
+handlers:
+- url: /img
+  static_dir: img
