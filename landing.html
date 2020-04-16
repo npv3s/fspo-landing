@@ -25,7 +25,7 @@
 
         .box {
             max-width: 960px;
-            margin: 0 auto;
+            margin: 1.75em auto !important;
         }
 
         .blue,
@@ -34,19 +34,20 @@
         }
 
         .blue {
-            background-color: #163ea4;
+            background-color: #1946BA;
         }
 
         .red {
-            background-color: red;
+            background-color: #EC0B43;
         }
 
         .blue-light {
-            background-color: #e3f1fa
+            background-color: #e3f1fa;
+            width: 250px;
         }
 
         .green-light {
-            background-color: #effaf3;
+            background-color: #95D600;
         }
 
         .red-light {
@@ -65,12 +66,18 @@
             font-family: "JetBrains Mono", monospace;
         }
 
+        .spec-card,
         .fl-column {
             text-align: center;
             display: flex;
             flex-direction: column
         }
 
+        .spec-card {
+            width: 250px;
+        }
+
+        .subject b,
         .fl-column img {
             margin: 0 auto;
         }
@@ -79,6 +86,16 @@
             text-align: left;
         }
 
+        .subject-description {
+            max-width: 960px;
+            margin: 0 auto;
+            color: black;
+            font-size: 1.25em;
+        }
+
+        h2 {
+            margin: 0 !important;
+        }
     </style>
     <script src="/static/navbar.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -121,39 +138,91 @@
     </div>
 </nav>
 <div class="section content" style="max-width: 960px; margin: 0 auto">
-    <div class="box red">
+    <div class="box red" style="margin-top: 0 !important;">
         <h2>Набор <span class="mono">2020</span> открыт!</h2>
     </div>
     <div class="box blue">
-        <h2>ФСПО <span class="mono">2</span>.<span class="mono">0</span> - новый подход к среднему профессиональному
+        <h2 style="margin-bottom: 0.5em !important;">ФСПО <span class="mono">2</span>.<span class="mono">0</span> -
+            новый подход к среднему профессиональному
             образованию</h2>
         Обучение в ФСПО позволит выбрать особое направление, наиболее интересующее студента.<br>
-        <b>Изучай что хочешь <i>ты</i></b>
+        <b>Изучай что хочешь <span class="red" style="padding: 0 0.25em 0.25em;">ты</span></b>
     </div>
 
     <h2>Учебная программа</h2>
     От транизисторов до Python
 
-    <div style="margin-top: 1em; display: flex; flex-direction: column">
-        <div class="box fl-column blue-light" data-aos="fade-in">
+    <div class="fl-column" style="margin-top: 1em;">
+        <div class="box spec-card blue" data-aos="fade-left">
             <img src="img/transistor.svg" alt="Транзистор">
-            Изучение работы транзистора<br>
-            <b class="mono">ФИЗИКА</b>
+            <div class="red subject">
+                <b class="mono">ФИЗИКА</b>
+            </div>
         </div>
-        <img src="img/arrow.svg" style="margin-bottom: 24px" alt="стрелочка">
-        <div class="box fl-column green-light" data-aos="fade-in">
+        <img src="img/arrow.svg" alt="стрелочка">
+        <div class="box spec-card blue" data-aos="fade-right">
             <img src="img/sprite1.svg" alt="Схема" id="circuit">
-            Изучение работы процессора и памяти<br>
-            <b class="mono">ИНФОРМАТИКА</b>
+            <div class="red subject">
+                <b class="mono">ИНФОРМАТИКА</b>
+            </div>
         </div>
-        <img src="img/arrow.svg" style="margin-bottom: 24px" alt="стрелочка">
-        <div class="box fl-column red-light" data-aos="fade-in">
-            <div class="mono" id="asm">┌────────┬────────┐<br>|AX: FFFF|BX: FFFF|<br>└────────┴────────┘<br><br><br><br></div>
-            Изучение Assembler
-            <b class="mono">АРХИТЕКТУРА<br>ПРОЦЕССОРА</b>
+        <img src="img/arrow.svg" alt="стрелочка">
+        <div class="box spec-card blue" data-aos="fade-left">
+            <div class="mono" id="asm">┌────────┬────────┐<br>|AX: FFFF|BX: FFFF|<br>└────────┴────────┘<br><br><br><br>
+            </div>
+            <div class="red subject">
+                <b class="mono">АРХИТЕКТУРА<br>ПРОЦЕССОРА</b>
+            </div>
+        </div>
+        <img src="img/arrow.svg" alt="стрелочка">
+    </div>
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap">
+        <div class="box spec-card blue" data-aos="fade-right">
+            <div class="mono">СПЕЦИАЛИЗАЦИЯ</div>
+            <img src="img/web-white-48dp.svg">
+            <div class="red subject">
+                <b class="mono">Веб-программирование</b>
+            </div>
+        </div>
+        <div class="box spec-card blue" data-aos="fade-left">
+            <div class="mono">СПЕЦИАЛИЗАЦИЯ</div>
+            <img src="img/laptop_mac-white-48dp.svg">
+            <div class="red subject">
+                <b class="mono">Фронтенд разработка</b>
+            </div>
+        </div>
+        <div class="box spec-card blue" data-aos="fade-right">
+            <div class="mono">СПЕЦИАЛИЗАЦИЯ</div>
+            <img src="img/memory-white-48dp.svg">
+            <div class="red subject">
+                <b class="mono">Системное<br>программирование</b>
+            </div>
+        </div>
+        <div class="box spec-card blue" data-aos="fade-left">
+            <div class="mono">СПЕЦИАЛИЗАЦИЯ</div>
+            <img src="img/storage-white-48dp.svg">
+            <div class="red subject">
+                <b class="mono">Администрирование БД</b>
+            </div>
+        </div>
+        <div class="box spec-card blue" data-aos="fade-right">
+            <div class="mono">СПЕЦИАЛИЗАЦИЯ</div>
+            <img src="img/phone_iphone-white-48dp.svg">
+            <div class="red subject">
+                <b class="mono">Мобильная разработка</b>
+            </div>
+        </div>
+        <div class="box spec-card blue" data-aos="fade-left">
+            <div class="mono">СПЕЦИАЛИЗАЦИЯ</div>
+            <img src="img/blur_on-white-48dp.svg">
+            <div class="red subject">
+                <b class="mono">Искуственный интелект</b>
+            </div>
         </div>
     </div>
 </div>
+
+
 <script>
     AOS.init();
 </script>
