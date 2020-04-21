@@ -6,11 +6,11 @@
 		class="st6">
 	<style type="text/css">
 	<![CDATA[
-		.st1 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
-		.st2 {marker-end:url(#mrkr13-30);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
-		.st3 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.37313432835821}
+		.st1 {stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
+		.st2 {marker-end:url(#mrkr13-30);stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
+		.st3 {fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1;stroke-width:0.37313432835821}
 		.st4 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
-		.st5 {fill:#000000;font-family:JetBrains Mono;font-size:1.00001em}
+		.st5 {fill:#ffffff;font-family:JetBrains Mono;font-size:1.00001em}
 		.st6 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
 	</style>
