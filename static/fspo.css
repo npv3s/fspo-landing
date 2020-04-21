@@ -128,10 +128,11 @@ body {
     align-self: flex-start;
     order: 2;
     flex-grow: 1;
+    max-width: calc(900px - 300px - 2rem);
 }
 
 #overlay-card .spec-card {
-    margin: 1rem !important;
+    margin: auto;
     align-self: center;
     flex-grow: 0;
 }
