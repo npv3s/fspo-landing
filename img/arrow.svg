@@ -2,32 +2,32 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Создано Microsoft Visio, экспорт SVG arrow.svg Страница-1 -->
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
-		width="0.210739in" height="0.60444in" viewBox="0 0 15.1732 43.5197" xml:space="preserve" color-interpolation-filters="sRGB"
+		width="0.25935in" height="0.653051in" viewBox="0 0 18.6732 47.0197" xml:space="preserve" color-interpolation-filters="sRGB"
 		class="st2">
 	<style type="text/css">
 	<![CDATA[
-		.st1 {stroke:#7f7f7f;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st1 {stroke:#ec0b43;stroke-linecap:round;stroke-linejoin:round;stroke-width:4.5}
 		.st2 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
 	</style>
 
 	<g>
 		<title>Страница-1</title>
-		<g id="shape33-1" transform="translate(-31.3386,23.5571) rotate(-63.4349)">
+		<g id="shape33-1" transform="translate(-32.7191,23.7418) rotate(-63.4349)">
 			<title>Лист.33</title>
-			<path d="M0 43.52 L15.85 43.52" class="st1"/>
+			<path d="M0 47.02 L15.85 47.02" class="st1"/>
 		</g>
-		<g id="shape34-4" transform="translate(51.1063,28.8465) rotate(90)">
+		<g id="shape34-4" transform="translate(56.3563,30.5965) rotate(90)">
 			<title>Лист.34</title>
-			<path d="M0 43.52 L14.17 43.52" class="st1"/>
+			<path d="M0 47.02 L14.17 47.02" class="st1"/>
 		</g>
-		<g id="shape35-7" transform="translate(51.1063,0.5) rotate(90)">
+		<g id="shape35-7" transform="translate(56.3563,2.25) rotate(90)">
 			<title>Лист.35</title>
-			<path d="M0 43.52 L28.35 43.52" class="st1"/>
+			<path d="M0 47.02 L28.35 47.02" class="st1"/>
 		</g>
-		<g id="shape37-10" transform="translate(-31.3386,62.4823) rotate(-116.565)">
+		<g id="shape37-10" transform="translate(-32.7191,65.7975) rotate(-116.565)">
 			<title>Лист.37</title>
-			<path d="M0 43.52 L15.85 43.52" class="st1"/>
+			<path d="M0 47.02 L15.85 47.02" class="st1"/>
 		</g>
 	</g>
 </svg>
