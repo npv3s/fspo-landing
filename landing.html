@@ -6,9 +6,9 @@
     <meta name="theme-color" content="#1946BA"/>
     <meta name="description" content="Новая образовательная программа ФСПО.">
     <title>ФСПО 2.0</title>
-    <link rel="shortcut icon" type="image/x-icon" href="https://fspo.ifmo.ru/bundles/app/img/favicon.ico"/>
-    <link rel="apple-touch-icon" href="https://fspo.ifmo.ru/bundles/app/img/apple_touch.png"/>
-    <link rel="image_src" href="https://fspo.ifmo.ru/bundles/app/img/opera_speeddial.png"/>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+    <link rel="apple-touch-icon" href="img/apple_touch.png"/>
+    <link rel="image_src" href="img/opera_speeddial.png"/>
     <link rel="stylesheet" href="static/bulma.css">
     <link rel="stylesheet" href="static/fspo.css">
     <script async src="static/animations.js"></script>
@@ -55,14 +55,14 @@
         <div class="box spec-card blue" id="physics" data-aos="fade-right">
             <img src="img/transistor.svg" alt="Транзистор">
             <div class="red subject">
-                <b class="mono">ФИЗИКА</b>
+                <b class="mono">Физика</b>
             </div>
         </div>
         <img src="img/arrow.svg" alt="стрелочка">
-        <div class="box spec-card blue" data-aos="fade-right">
+        <div class="box spec-card blue" id="informatics" data-aos="fade-right">
             <img src="img/sprite1.svg" alt="Схема" id="circuit">
             <div class="red subject">
-                <b class="mono">ИНФОРМАТИКА</b>
+                <b class="mono">Информатика</b>
             </div>
         </div>
         <img src="img/arrow.svg" alt="стрелочка">
@@ -71,48 +71,55 @@
                 FFFF|<br>└────────┴────────┘<br><br><br><br>
             </div>
             <div class="red subject">
-                <b class="mono">АРХИТЕКТУРА<br>ПРОЦЕССОРА</b>
+                <b class="mono">Архитектура<br>Процессора</b>
+            </div>
+        </div>
+        <img src="img/arrow.svg" alt="стрелочка">
+        <div class="box spec-card blue" id="hardware-hist" data-aos="fade-right">
+            <img src="img/radio-white-48dp.svg" alt="Радио">
+            <div class="red subject">
+                <b class="mono">История<br>Аппаратного<br>Обеспечения</b>
             </div>
         </div>
         <img src="img/arrow.svg" alt="стрелочка">
     </div>
     <div style="display: flex; flex-direction: row; flex-wrap: wrap">
-        <div class="box spec-card blue" data-aos="fade-right">
+        <div class="box spec-card blue" id="web-spec" data-aos="fade-right">
             <div class="mono">СПЕЦИАЛИЗАЦИЯ</div>
             <img src="img/web-white-48dp.svg" alt="Веб-страница">
             <div class="red subject">
                 <b class="mono">Веб-программирование</b>
             </div>
         </div>
-        <div class="box spec-card blue" data-aos="fade-right">
+        <div class="box spec-card blue" id="mc-spec" data-aos="fade-right">
             <div class="mono">СПЕЦИАЛИЗАЦИЯ</div>
-            <img src="img/laptop_mac-white-48dp.svg" alt="Ноутбук">
+            <img src="img/developer_board-white-48dp.svg" alt="Макетная плата">
             <div class="red subject">
-                <b class="mono">Фронтенд разработка</b>
+                <b class="mono">Программирование микроконтроллеров</b>
             </div>
         </div>
-        <div class="box spec-card blue" data-aos="fade-right">
+        <div class="box spec-card blue" id="sys-spec" data-aos="fade-right">
             <div class="mono">СПЕЦИАЛИЗАЦИЯ</div>
             <img src="img/memory-white-48dp.svg" alt="Электорнный чип">
             <div class="red subject">
                 <b class="mono">Системное<br>программирование</b>
             </div>
         </div>
-        <div class="box spec-card blue" data-aos="fade-right">
+        <div class="box spec-card blue" id="db-spec" data-aos="fade-right">
             <div class="mono">СПЕЦИАЛИЗАЦИЯ</div>
             <img src="img/storage-white-48dp.svg" alt="Значок специализации администрирование БД">
             <div class="red subject">
                 <b class="mono">Администрирование БД</b>
             </div>
         </div>
-        <div class="box spec-card blue" data-aos="fade-right">
+        <div class="box spec-card blue" id="mobile-spec" data-aos="fade-right">
             <div class="mono">СПЕЦИАЛИЗАЦИЯ</div>
             <img src="img/phone_iphone-white-48dp.svg" alt="Дисковое хранилище">
             <div class="red subject">
                 <b class="mono">Мобильная разработка</b>
             </div>
         </div>
-        <div class="box spec-card blue" data-aos="fade-right">
+        <div class="box spec-card blue" id="ai-spec" data-aos="fade-right">
             <div class="mono">СПЕЦИАЛИЗАЦИЯ</div>
             <img src="img/blur_on-white-48dp.svg" alt="Нейросеть">
             <div class="red subject">
@@ -159,6 +166,16 @@
                 <li>Богат</li>
                 <li>Успешен</li>
                 <li>Совсем не тот, что был 3 года назад</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="box big-card">
+        <img src="img/man2.jpg" alt="Фото выпускника">
+        <div>
+            <h2 class="mono">Серьёзный мужик</h2>
+            <ul>
+                <li>Сидит, серьёзничает</li>
             </ul>
         </div>
     </div>
