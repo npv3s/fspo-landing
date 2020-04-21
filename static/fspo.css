@@ -1,0 +1,290 @@
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url(JetBrainsMono.ttf);
+    font-display: swap;
+}
+
+html {
+    font-family: "Open Sans", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar img {
+    margin: 1rem;
+    height: 2rem;
+}
+
+.box {
+    max-width: 960px;
+    margin: 1.5em auto;
+}
+
+.instrument,
+.blue,
+.red,
+.gray {
+    color: #fff;
+}
+
+.blue {
+    background-color: #1946BA;
+}
+
+.gray {
+    background-color: #333;
+}
+
+.instrument,
+.red {
+    background-color: #EC0B43;
+}
+
+.box h2 {
+    color: #fff;
+}
+
+.instrument,
+.mono {
+    font-family: "JetBrains Mono", monospace;
+}
+
+.map-box div,
+.spec-card,
+.fl-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.spec-card,
+.fl-column {
+    text-align: center;
+}
+
+.spec-card {
+    width: 250px;
+}
+
+.subject b,
+.fl-column img {
+    margin: 0 auto;
+}
+
+#asm-animation {
+    text-align: left;
+}
+
+.subject-description {
+    max-width: 960px;
+    margin: 0 auto;
+    color: black;
+    font-size: 1.25em;
+}
+
+h2 {
+    margin: 0;
+}
+
+body {
+    background-color: transparent;
+}
+
+.instrument {
+    border-radius: 0.5em;
+    padding: 0.25em;
+    margin-right: 0.1em;
+}
+
+
+.close {
+    position: fixed;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+#overlay-card {
+    max-width: 960px;
+    transform: rotate(0);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+
+#overlay-card .description {
+    font-size: 1.2em;
+    color: black !important;
+    padding: 1.25rem;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    align-self: flex-start;
+    order: 2;
+    flex-grow: 1;
+}
+
+#overlay-card .spec-card {
+    margin: 1rem !important;
+    align-self: center;
+    flex-grow: 0;
+}
+
+/*.close {
+    position: relative;
+    float: right;
+    top: 0.5rem;
+    right: 2.5rem;
+    width: 2rem;
+    height: 2rem
+}*/
+
+.footer {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.footer img {
+    height: 4rem;
+}
+
+.overlay {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #000000c0; */
+}
+
+.fspo-card {
+    min-height: calc(250px + 2rem);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fspo-card img {
+    max-width: calc(100% - 2rem);
+    border-radius: 300px;
+    width: 250px;
+    height: 250px;
+    padding: 1rem;
+}
+
+.fspo-card div {
+    max-width: calc(860px - 250px - 2rem);
+    font-size: 1.2em;
+}
+
+.big-card {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.big-card img {
+    border-radius: 300px;
+    width: 250px;
+    height: 250px;
+    padding: 1rem;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.big-card > div {
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+.big-card h2 {
+    color: black !important;
+}
+
+.header-block {
+    margin-top: 0 !important;
+}
+
+.section {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.map {
+    width: 100%;
+    height: 300px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-image: url("/img/map.webp");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+
+.map-box {
+    align-self: flex-start;
+    background-color: #fff;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+}
+
+.map-box div {
+    display: flex;
+    flex-direction: column;
+}
+
+.map-box a {
+    margin-left: 1rem;
+}
+
+.map-box a:visited,
+.map-box a:link {
+    color: black;
+}
+
+.bonuses,
+.little-card {
+    display: flex;
+    flex-direction: row;
+}
+
+.bonuses {
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.little-card.box {
+    width: 350px;
+    max-width: 100%;
+    margin: 0.5rem;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+}
+
+.little-card img {
+    width: 3rem;
+    height: 3rem;
+    flex-shrink: 0;
+    align-self: center;
+}
+
+.little-card > *:not(:first-child) {
+    margin-left: 1rem;
+}
+
+.little-card div {
+    align-self: center;
+}
