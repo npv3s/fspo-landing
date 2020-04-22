@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		width="150px" height="150px" viewBox="0 0 58.1929 58.1929" xml:space="preserve"
+		color-interpolation-filters="sRGB" class="st6">
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#f14e23;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
+		.st2 {fill:#82ba01;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
+		.st3 {fill:#02a3f1;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
+		.st4 {fill:#ffb905;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
+		.st5 {stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
+		.st6 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g>
+		<title>Страница-1</title>
+		<g id="shape241-1" transform="translate(0.75,-29.0964)">
+			<title>Лист.241</title>
+			<rect x="0" y="29.8464" width="28.3465" height="28.3465" class="st1"/>
+		</g>
+		<g id="shape242-3" transform="translate(29.0965,-29.0964)">
+			<title>Лист.242</title>
+			<rect x="0" y="29.8464" width="28.3465" height="28.3465" class="st2"/>
+		</g>
+		<g id="shape243-5" transform="translate(0.75,-0.75)">
+			<title>Лист.243</title>
+			<rect x="0" y="29.8464" width="28.3465" height="28.3465" class="st3"/>
+		</g>
+		<g id="shape244-7" transform="translate(29.0965,-0.75)">
+			<title>Лист.244</title>
+			<rect x="0" y="29.8464" width="28.3465" height="28.3465" class="st4"/>
+		</g>
+		<g id="shape245-9" transform="translate(87.2894,0.75) rotate(90)">
+			<title>Лист.245</title>
+			<path d="M0 58.19 L56.69 58.19" class="st5"/>
+		</g>
+		<g id="shape246-12" transform="translate(0.75,-29.0965)">
+			<title>Лист.246</title>
+			<path d="M0 58.19 L56.69 58.19" class="st5"/>
+		</g>
+	</g>
+</svg>
