@@ -21,4 +21,4 @@ if len(sys.argv) > 1:
         return static_file(name, root=root_dir+'/static')
 
     if sys.argv[1] == 'debug':
-        run(app, host='localhost', port=8080, debug=True)
+        run(app, host='0.0.0.0', port=8080, debug=True)
