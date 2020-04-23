@@ -124,7 +124,7 @@ span {
     background-color: #ec0b43
 }
 
-.instrument, .mono {
+.mono {
     font-family: "JetBrains Mono", monospace
 }
 
@@ -147,6 +147,10 @@ span {
 
 .spec-card > img {
     height: 144px
+}
+
+.spec-card .subject {
+    margin: auto 0;
 }
 
 .fl-column img, .subject b {
@@ -342,4 +346,9 @@ span {
     display: flex;
     flex-flow: row wrap;
     justify-items: stretch
+}
+
+.text {
+    text-align: left;
+    font-size: 1.2rem;
 }
