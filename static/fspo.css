@@ -1,11 +1,85 @@
-@font-face {
-    font-family: "JetBrains Mono";
-    src: url(JetBrainsMono.ttf);
-    font-display: swap;
+body, html {
+    margin: 0;
+    padding: 0
+}
+
+body, h2 {
+    font-weight: 400
+}
+
+h2 {
+    padding: 0;
+    font-size: 100%;
+    margin: 0
+}
+
+* {
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 html {
-    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    min-width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-family: "Open Sans", sans-serif
+}
+
+source {
+    display: none
+}
+
+body {
+    color: #4a4a4a;
+    font-size: 1em;
+    line-height: 1.5;
+    background-color: transparent
+}
+
+a {
+    color: #3273dc;
+    cursor: pointer;
+    text-decoration: none
+}
+
+a:hover {
+    color: #363636
+}
+
+span {
+    font-style: inherit;
+    font-weight: inherit
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 .5em 1em -.125em rgba(10, 10, 10, .1), 0 0 0 1px rgba(10, 10, 10, .02);
+    display: block;
+    padding: 1.25rem
+}
+
+.content h2 {
+    font-weight: 600;
+    line-height: 1.125;
+    font-size: 1.75em
+}
+
+.section {
+    padding: 1.5rem 0
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url(JetBrainsMono.ttf);
+    font-display: swap
 }
 
 .navbar {
@@ -13,146 +87,119 @@ html {
     flex-direction: row;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%
+}
+
+.navbar picture {
+    height: 4rem
 }
 
 .navbar img {
     margin: 1rem;
-    height: 2rem;
+    height: 2rem
 }
 
 .box {
-    max-width: 960px;
-    margin: 1.5em auto;
+    max-width: 100%;
+    margin: 1.5em auto
 }
 
-.instrument,
-.blue,
-.red,
-.gray {
-    color: #fff;
+.blue, .box h2, .gray, .instrument, .red {
+    color: #fff
 }
 
 .blue {
-    background-color: #1946BA;
+    background-color: #1946ba
 }
 
 .gray {
-    background-color: #333;
+    background-color: #333
 }
 
-.instrument,
-.red {
-    background-color: #EC0B43;
+.instrument, .red {
+    background-color: #ec0b43
 }
 
-.box h2 {
-    color: #fff;
+.instrument, .mono {
+    font-family: "JetBrains Mono", monospace
 }
 
-.instrument,
-.mono {
-    font-family: "JetBrains Mono", monospace;
+#overlay-card.box, .row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around
 }
 
-.map-box div,
-.spec-card,
-.fl-column {
+.fl-column, .spec-card {
     display: flex;
     flex-direction: column;
+    text-align: center
 }
 
-.spec-card,
-.fl-column {
-    text-align: center;
-}
-
-.spec-card {
+.spec-card.box {
     width: 250px;
+    margin: 1em
 }
 
-.subject b,
-.fl-column img {
-    margin: 0 auto;
+.spec-card > img {
+    height: 144px
 }
 
-#asm-animation {
-    text-align: left;
+.fl-column img, .subject b {
+    margin: 0 auto
+}
+
+#asm-animation, .big-card > div {
+    text-align: left
 }
 
 .subject-description {
     max-width: 960px;
     margin: 0 auto;
-    color: black;
-    font-size: 1.25em;
+    color: #000;
+    font-size: 1.25em
 }
-
-h2 {
-    margin: 0;
-}
-
-body {
-    background-color: transparent;
-}
-
-.instrument {
-    border-radius: 0.5em;
-    padding: 0.25em;
-    margin-right: 0.1em;
-}
-
 
 .close {
     position: fixed;
-    top: 0.5rem;
-    right: 0.5rem;
+    top: .5rem;
+    right: .5rem;
     width: 2rem;
-    height: 2rem;
+    height: 2rem
 }
 
-#overlay-card {
+#overlay-card.box {
+    margin: auto;
     max-width: 960px;
-    transform: rotate(0);
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    transform: rotate(0)
 }
-
 
 #overlay-card .description {
     font-size: 1.2em;
-    color: black !important;
+    color: #000 !important;
     padding: 1.25rem;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
     align-self: flex-start;
     order: 2;
     flex-grow: 1;
-    max-width: calc(900px - 300px - 2rem);
+    max-width: calc(900px - 300px - 2rem)
 }
 
 #overlay-card .spec-card {
+    max-width: calc(100% - 6rem);
     margin: auto;
     align-self: center;
-    flex-grow: 0;
+    flex-grow: 0
 }
-
-/*.close {
-    position: relative;
-    float: right;
-    top: 0.5rem;
-    right: 2.5rem;
-    width: 2rem;
-    height: 2rem
-}*/
 
 .footer {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row-reverse
 }
 
 .footer img {
-    height: 4rem;
+    height: 4rem
 }
 
 .overlay {
@@ -164,128 +211,131 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: #000000c0; */
+    background-color: #000000c0
 }
 
-.fspo-card {
-    min-height: calc(250px + 2rem);
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.fspo-card img {
-    max-width: calc(100% - 2rem);
-    border-radius: 300px;
-    width: 250px;
-    height: 250px;
-    padding: 1rem;
-}
-
-.fspo-card div {
-    max-width: calc(860px - 250px - 2rem);
-    font-size: 1.2em;
+.overlay-container {
+    overflow: auto;
+    max-width: 100%;
+    max-height: 100%
 }
 
 .big-card {
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .big-card img {
+    box-sizing: content-box;
     border-radius: 300px;
     width: 250px;
     height: 250px;
-    padding: 1rem;
-    flex-grow: 0;
-    flex-shrink: 1;
+    padding: 1rem
 }
 
 .big-card > div {
+    min-width: 350px;
+    width: calc(100% - 250px - 2rem);
+    max-width: 100%;
+    align-self: flex-start;
+    font-size: 1.2rem;
     flex-grow: 1;
-    flex-shrink: 2;
+    margin-right: auto
 }
 
 .big-card h2 {
-    color: black !important;
+    color: #000 !important
 }
 
 .header-block {
-    margin-top: 0 !important;
+    width: 100%;
+    margin-top: 0;
+    text-align: left;
 }
 
 .section {
-    max-width: 960px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto
+}
+
+.map, .map-box {
+    border-radius: 6px;
+    display: flex
 }
 
 .map {
-    width: 100%;
+    width: calc(100% - 1rem);
     height: 300px;
-    border-radius: 6px;
     overflow: hidden;
-    background-image: url("/img/map.webp");
+    background-image: url(/img/map.webp);
     background-position: center;
-    background-size: cover;
-    display: flex;
+    background-size: cover
 }
 
 .map-box {
     align-self: flex-start;
     background-color: #fff;
-    margin: 0.5rem;
-    padding: 0.5rem;
-    border-radius: 6px;
-    display: flex;
-    flex-direction: row;
+    margin: .5rem;
+    padding: .5rem;
+    flex-direction: row
 }
 
 .map-box div {
     display: flex;
-    flex-direction: column;
+    flex-direction: column
 }
 
 .map-box a {
-    margin-left: 1rem;
+    margin-left: 1rem
 }
 
-.map-box a:visited,
-.map-box a:link {
-    color: black;
+.map-box a:link, .map-box a:visited {
+    color: #000
 }
 
-.bonuses,
-.little-card {
+.bonuses, .little-card {
     display: flex;
     flex-direction: row;
+    flex-shrink: 1
 }
 
 .bonuses {
     flex-wrap: wrap;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem
 }
 
 .little-card.box {
     width: 350px;
     max-width: 100%;
-    margin: 0.5rem;
+    margin: .5rem;
     flex-wrap: nowrap;
     flex-grow: 1;
+    min-width: 45%;
+    text-align: left
 }
 
 .little-card img {
+    margin: 0;
     width: 3rem;
     height: 3rem;
     flex-shrink: 0;
-    align-self: center;
+    align-self: center
 }
 
-.little-card > *:not(:first-child) {
+.little-card.box div {
     margin-left: 1rem;
+    align-self: center;
+    width: calc(100% - 4rem)
 }
 
-.little-card div {
-    align-self: center;
+.contacts {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: stretch
 }

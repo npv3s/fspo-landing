@@ -9,40 +9,45 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
     <link rel="apple-touch-icon" href="img/apple_touch.png"/>
     <link rel="image_src" href="img/opera_speeddial.png"/>
-    <link rel="stylesheet" href="static/bulma.css">
     <link rel="stylesheet" href="static/fspo.css">
     <script async src="static/animations.js"></script>
     <script async src="static/overlay.js"></script>
+    <script async src="static/safari.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar blue" role="navigation" aria-label="main navigation">
-    <img src="img/fspo-logo.webp" alt="Логотип ФСПО">
+    <picture>
+        <source srcset="img/fspo-logo.webp" type="image/webp">
+        <img src="img/fspo-logo.png" alt="Логотип ФСПО">
+    </picture>
 </nav>
-<div class="section content">
-
-    <div class="box red mono" style="text-align: center; font-size: 1.2em">
+<div class="section fl-column content">
+    <div class="box red header-block mono" style="text-align: center; font-size: 1.2em">
         Это βета версия. Сайт находится в стадии разработки.
     </div>
-
     <div class="box blue header-block">
         <h2>Набор <span class="mono">2020</span> открыт!</h2>
     </div>
-    <div class="box blue">
-        <h2 style="margin-bottom: 0.5em !important;overflow-wrap: break-word;">ФСПО <span class="mono">2</span>.<span class="mono">0</span> -
+    <div class="box blue header-block" style="text-align: left">
+        <h2 style="margin-bottom: 0.5em !important;overflow-wrap: break-word;">ФСПО <span class="mono">2</span>.<span
+                class="mono">0</span> -
             новый подход к среднему профессиональному
             образованию</h2>
         Обучение в ФСПО позволит выбрать особое направление, наиболее интересующее студента.<br>
         <b>Изучай что хочешь <span class="red" style="padding: 0 0.25em 0.25em;">ты</span></b>
     </div>
-
     <div class="box header-block gray">
         <h2>О факультете</h2>
     </div>
-    <div class="box fspo-card">
-        <img src="img/fspo-building.webp" alt="Здание ФСПО">
-        <div>
+    <div class="box big-card" style="width: auto">
+        <picture>
+            <source srcset="img/fspo-building.webp" type="image/webp">
+            <img src="img/fspo-building.jpg" alt="Здание ФСПО">
+        </picture>
+
+        <div style="max-width: 38rem; margin-right: auto">
             <b>Факультет среднего профессионального образования</b> Университета ИТМО ведет свою историю с 1945 года.
             В 1998 году, ещё как техникум, вошел в состав университета ИТМО. В настоящее время на нашем факультете
             используются самые передовые методики обучения студентов, соответствующие всем международным стандартам.
@@ -50,45 +55,44 @@
             специалистов среднего звена в направлении информационных технологий.
         </div>
     </div>
-
     <div class="box header-block gray">
         <h2>Учебная программа</h2>
         (Нажмите на предмет, чтобы узнать больше)
     </div>
-
-    <div class="fl-column" style="margin-top: 1em;">
-        <div class="box spec-card blue" id="physics" data-aos="fade-right">
-            <img src="img/transistor.svg" alt="Транзистор">
-            <div class="red subject">
-                <b class="mono">Физика</b>
+    <div class="row">
+        <div class="row">
+            <div class="box spec-card blue" id="physics" data-aos="fade-right">
+                <img src="img/transistor.svg" alt="Транзистор">
+                <div class="red subject">
+                    <b class="mono">Физика</b>
+                </div>
+            </div>
+            <div class="box spec-card blue" id="informatics" data-aos="fade-right">
+                <img src="img/sprite1.svg" alt="Схема" id="circuit">
+                <div class="red subject">
+                    <b class="mono">Информатика</b>
+                </div>
             </div>
         </div>
-        <img src="img/arrow.svg" alt="стрелочка">
-        <div class="box spec-card blue" id="informatics" data-aos="fade-right">
-            <img src="img/sprite1.svg" alt="Схема" id="circuit">
-            <div class="red subject">
-                <b class="mono">Информатика</b>
+        <div class="row">
+            <div class="box spec-card blue" id="asm" data-aos="fade-right">
+                <div class="mono" id="asm-animation">┌────────┬────────┐<br>|AX: FFFF|BX:
+                    FFFF|<br>└────────┴────────┘<br><br><br><br>
+                </div>
+                <div class="red subject">
+                    <b class="mono">Архитектура<br>Процессора</b>
+                </div>
+            </div>
+            <div class="box spec-card blue" id="hardware-hist" data-aos="fade-right">
+                <img src="img/radio-white-48dp.svg" alt="Радио">
+                <div class="red subject">
+                    <b class="mono">История<br>Аппаратного<br>Обеспечения</b>
+                </div>
             </div>
         </div>
-        <img src="img/arrow.svg" alt="стрелочка">
-        <div class="box spec-card blue" id="asm" data-aos="fade-right">
-            <div class="mono" id="asm-animation">┌────────┬────────┐<br>|AX: FFFF|BX:
-                FFFF|<br>└────────┴────────┘<br><br><br><br>
-            </div>
-            <div class="red subject">
-                <b class="mono">Архитектура<br>Процессора</b>
-            </div>
-        </div>
-        <img src="img/arrow.svg" alt="стрелочка">
-        <div class="box spec-card blue" id="hardware-hist" data-aos="fade-right">
-            <img src="img/radio-white-48dp.svg" alt="Радио">
-            <div class="red subject">
-                <b class="mono">История<br>Аппаратного<br>Обеспечения</b>
-            </div>
-        </div>
-        <img src="img/arrow.svg" alt="стрелочка">
     </div>
-    <div style="display: flex; flex-direction: row; flex-wrap: wrap">
+    <img src="img/arrow.svg" alt="стрелочка">
+    <div class="row" style="max-width: calc(750px + 6rem)">
         <div class="box spec-card blue" id="web-spec" data-aos="fade-right">
             <div class="mono">СПЕЦИАЛИЗАЦИЯ</div>
             <img src="img/web-white-48dp.svg" alt="Веб-страница">
@@ -132,11 +136,9 @@
             </div>
         </div>
     </div>
-
     <div class="box header-block gray">
         <h2>Бонусы для студентов</h2>
     </div>
-
     <div class="bonuses">
         <div class="box little-card">
             <img src="img/jb.png" alt="Логотип JetBrains">
@@ -149,24 +151,22 @@
         </div>
 
         <div class="box little-card">
-            <img src="img/coursera.webp" alt="Логотип Coursera">
+            <img src="img/coursera.jpg" alt="Логотип Coursera">
             <div>Прохождение курсов на международных площадках</div>
         </div>
 
         <div class="box little-card">
-            <img src="img/ms.jpg" alt="Логоип Microsoft">
+            <img src="img/ms.svg" alt="Логоип Microsoft">
             <div>Бесплатное использование ПО Microsoft Office 365</div>
         </div>
     </div>
-
     <div class="box header-block gray">
         <h2>Реальные истории</h2>
     </div>
-
     <div class="box big-card">
         <img src="img/man.jpg" alt="Фото выпускника">
         <div>
-            <h2 class="mono">Полтораков И.</h2>
+            <h2 class="mono">Мужик улабается</h2>
             <ul>
                 <li>Богат</li>
                 <li>Успешен</li>
@@ -174,7 +174,6 @@
             </ul>
         </div>
     </div>
-
     <div class="box big-card">
         <img src="img/man2.jpg" alt="Фото выпускника">
         <div>
@@ -184,19 +183,22 @@
             </ul>
         </div>
     </div>
-
     <div class="box header-block gray">
         <h2>Контакты</h2>
     </div>
-    <div class="bonuses">
+    <div class="contacts">
         <div class="box little-card">
             <img src="img/local_phone-black-48dp.svg" alt="Значок телефона">
-            <div><a href="tel:+78122343355">+7(812)234-33-55</a></div>
+            <div>
+                <b>Телефон</b><br>
+                <a href="tel:+78122343355">+7(812)234-33-55</a>
+            </div>
         </div>
 
         <div class="box little-card">
             <img src="img/gps_fixed-black-48dp.svg" alt="Значок GPS">
             <div>
+                <b>Адрес</b><br>
                 <a href="https://goo.gl/maps/nczD17yJGF9UW6Br8">197022, Санкт-Петербург, Песочная набережная, д. 14</a>
             </div>
         </div>
@@ -217,14 +219,16 @@
     </div>
 </div>
 <div class="overlay" style="display: none">
-    <div id="overlay-card" class="box content">
-        <img class="close" src="img/close-black-48dp.svg" alt="Значок закрыть">
-        <div class="box spec-card blue"></div>
-        <div class="description"></div>
+    <div class="overlay-container">
+        <div id="overlay-card" class="box content">
+            <img class="close" src="img/close-black-48dp.svg" alt="Значок закрыть">
+            <div class="box spec-card blue"></div>
+            <div class="description"></div>
+        </div>
     </div>
 </div>
 <footer class="footer blue">
-    <img src="img/itmo.webp" alt="Логотип итмо">
+    <img src="img/itmo.png" alt="Логотип итмо">
 </footer>
 
 <script>
