@@ -151,6 +151,7 @@ span {
 
 .spec-card .subject {
     margin: auto 0;
+    border-radius: 6px;
 }
 
 .fl-column img, .subject b {
