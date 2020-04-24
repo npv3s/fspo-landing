@@ -1,3 +1,4 @@
+cd /home/npv3s/fspo-landing/
 git pull
 cp landing.html ./html/
 mv ./html/landing.html ./html/index.html
