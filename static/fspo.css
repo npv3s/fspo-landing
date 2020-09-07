@@ -19,16 +19,6 @@ h2 {
 }
 
 html {
-    font-size: 16px;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    min-width: 300px;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    text-rendering: optimizeLegibility;
-    -webkit-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
     font-family: "Open Sans", sans-serif
 }
 
@@ -247,12 +237,22 @@ span {
 
 .big-card > div {
     min-width: 350px;
-    width: calc(100% - 250px - 2rem);
+    width: auto;
     max-width: 100%;
     align-self: flex-start;
     font-size: 1.2rem;
     flex-grow: 1;
-    margin-right: auto
+    margin-right: auto;
+    padding: 1rem;
+}
+
+@media (max-width: 750px) {
+    .big-card {
+        flex-direction: column;
+    }
+    .big-card > div {
+        min-width: auto;
+    }
 }
 
 .big-card h2 {
